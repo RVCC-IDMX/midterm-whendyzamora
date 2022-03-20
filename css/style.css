@@ -1,2 +1,52 @@
 /* Journey to the Center of the Earth Practicum */
 /* Wendy Zamora */
+
+/* styling main structural elements*/
+
+body {
+    font-size: 1rem;
+    color: black;
+}
+
+header {
+    text-align: center;
+    border: 1px solid #886644;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: inset 5px 5px 5px 0 lightgray;
+}
+
+nav {
+    text-align: center;
+    border: 1px solid #886644;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: inset 5px 5px 5px 0 lightgray;
+
+}
+
+main {
+    border: 1px solid #886644;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: inset 5px 5px 5px 0 lightgray;
+}
+
+aside {
+    border: 1px solid #886644;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: inset 5px 5px 5px 0 lightgray;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid #886644;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: inset 5px 5px 5px 0 lightgray;
+}
