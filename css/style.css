@@ -8,45 +8,246 @@ body {
     color: black;
 }
 
+/* box-shadow from css generator https://html-css-js.com/css/generator/box-shadow/ */
+
 header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: white;
+    text-shadow: 5px 5px black;
     text-align: center;
-    border: 1px solid #886644;
+    border: 2px solid #886644;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin: 1em;
     padding: 1.5em;
-    box-shadow: inset 5px 5px 5px 0 lightgray;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 12px 8px 10px 10px #000000; 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 12px 8px 10px 10px #000000;
 }
 
 nav {
     text-align: center;
-    border: 1px solid #886644;
+    border: 2px solid #886644;
     margin: 1em;
     padding: 1.5em;
-    box-shadow: inset 5px 5px 5px 0 lightgray;
+    box-shadow: inset 5px 5px 5px 0 gray;
 
 }
 
 main {
-    border: 1px solid #886644;
+    border: 2px solid #886644;
+    text-align: left;
     margin: 1em;
     padding: 1.5em;
-    box-shadow: inset 5px 5px 5px 0 lightgray;
+    box-shadow: inset 5px 5px 5px 0 gray;
 }
 
 aside {
-    border: 1px solid #886644;
+    border: 2px solid #886644;
     margin: 1em;
     padding: 1.5em;
-    box-shadow: inset 5px 5px 5px 0 lightgray;
+    box-shadow: inset 5px 5px 5px 0 gray;
 }
 
 footer {
     text-align: center;
-    border: 1px solid #886644;
+    border: 2px solid #886644;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin: 1em;
     padding: 1.5em;
-    box-shadow: inset 5px 5px 5px 0 lightgray;
+    box-shadow: inset 5px 5px 5px 0 gray;
 }
+
+/* emphasizing specific texts */
+
+:lang(fr) {
+    font-style: italic;
+}
+
+:lang(is) {
+    font-style: italic;
+}
+
+:lang(it) {
+    font-style: italic;
+}
+
+:lang(id) {
+    font-style: italic;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+.character {
+    font-weight: 700;
+}
+
+/* creating a horizontal line under h2s */
+/* from a tutorial on Youtube, EJ Media https://www.youtube.com/watch?v=hCoMjvtsyPA&t=45s */
+
+h2 {
+    border-bottom: 1px dashed black;
+}
+
+/* styling links tutorial from Geoff Graham https://css-tricks.com/css-basics-styling-links-like-boss/*/
+
+a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #a52a2a;
+}
+
+/* creating a gradient background */
+
+body {
+    background-image: linear-gradient(180deg, #765729, black);
+    background-attachment: fixed;
+}
+
+/* opacity from https://www.delftstack.com/howto/css/background-opacity-css/ */
+
+header {
+    background-color: white;
+    opacity: .75;
+}
+
+nav {
+    background-color: white;
+    opacity: .75;
+}
+
+main {
+    background-color: white;
+    opacity: .75;
+}
+
+aside {
+    background-color: white;
+    opacity: .75;
+}
+
+footer {
+    background-color: white;
+    opacity: .75;
+}
+
+/*  styling Nav with help from PAulOB on https://www.sitepoint.com/community/t/remove-last-bar-between-links-in-nav/194419/10 */
+
+nav ul { 
+     margin: 0;  
+     padding: 0;  
+     list-style-type: none;
+     display: flex;
+     justify-content: center;
+    } 
+
+    nav ul li a {  
+        display: inline;  
+        border: 1px solid;  
+        border-radius: .5em;  
+        padding: .5em 1em;  
+        margin: .5em;} 
+
+/* styling images with help from https://www.w3schools.com/howto/howto_css_image_center.asp */
+
+#cover {
+    width: px;
+    max-width: 100%;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /* I aligned figcaption on my own */
+
+  figcaption {
+      text-align: center;
+  }
+
+  /* style aside */
+  
+  .submission1 {
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color:snow;
+    
+  }
+
+  .submission2 {
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: snow;
+  }
+    
+    .submission3 {
+        text-align: center;
+        width: 250px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 15px;
+        border: 1px solid black;
+        background-color:snow;
+    
+     }
+     
+     /* with help from https://www.youtube.com/watch?v=oxYek_5UamU */
+
+     .container {
+         display: flex;
+         justify-content: center;
+     }
+
+     /* https://www.peachpit.com/articles/article.aspx?p=1639627&seqNum=4 */
+
+     main p:first-of-type::first-line {
+         font-size: large;
+     }
+
+     /* after much trouble shooting I was able to find help through https://coder-coder.com/how-to-fix-css-background-image-not-working/ */
+
+     header {
+        background-image: url('../img/cave.jpg');
+     }
+
+    
+
+
+
+
+
+
+
+
+
+
